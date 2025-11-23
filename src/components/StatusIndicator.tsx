@@ -31,9 +31,9 @@ export const StatusIndicator = ({ status }: StatusIndicatorProps) => {
   const config = statusConfig[status];
 
   return (
-    <div className="flex items-center gap-2">
-      <div className={`w-3 h-3 rounded-full ${config.color} ${config.animation}`} />
-      <span className="text-sm font-medium text-gray-700">{config.text}</span>
+    <div className="flex items-center gap-1.5 sm:gap-2">
+      <div className={`w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full ${config.color} ${config.animation}`} />
+      <span className="text-xs sm:text-sm font-medium text-gray-700">{config.text}</span>
     </div>
   );
 };
