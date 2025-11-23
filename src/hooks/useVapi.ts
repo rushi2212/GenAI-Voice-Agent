@@ -81,6 +81,7 @@ export const useVapi = () => {
       setTranscript([]);
       setError(null);
 
+      // Start call with assistant ID (config is pre-configured in Vapi dashboard)
       await vapiRef.current.start(vapiConfig.assistantId);
     } catch (err) {
       console.error('Failed to start call:', err);
